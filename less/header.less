@@ -2,9 +2,8 @@ header {
   background-color: #24292e;
 }
 .header {
-  //position: relative;
-  //padding: 8px 78px;
-  height: 56px;
+  transition: 0.3s all ease;
+  position: relative;
 }
 .logo_wrap {
   vertical-align: top;
@@ -80,16 +79,11 @@ header {
 
 .main_menu__wrap {
   @media (max-width: 1200px) {
-    //visibility: hidden;
-    //opacity: 0;
     display: none;
   }
   &.active {
-    //visibility: visible;
-    //opacity: 1;
     display: block;
     margin-top: 25px;
-    //padding: 8px 78px;
     .right_menu__wrap {
       position: inherit;
       display: block;

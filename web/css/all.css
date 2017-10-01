@@ -2,7 +2,8 @@ header {
   background-color: #24292e;
 }
 .header {
-  height: 56px;
+  transition: 0.3s all ease;
+  position: relative;
 }
 .logo_wrap {
   vertical-align: top;
