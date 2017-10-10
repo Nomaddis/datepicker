@@ -26,12 +26,32 @@ header center {
   margin-bottom: 20px;
   display: flex;
 }
+.main-circles__item:hover .circle {
+  border-color: #b3d7ff;
+}
+.main-circles__item:hover .circle:before {
+  background-color: #b3d7ff;
+}
+.main-circles__item:hover .circle__text {
+  color: #b3d7ff;
+}
 .main-circles__item .circle {
   width: 50px;
   height: 50px;
-  border: 3px solid red;
+  border: 3px solid white;
   border-radius: 50%;
   display: inline-block;
+  position: relative;
+}
+.main-circles__item .circle:before {
+  position: absolute;
+  top: 43%;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 7px;
+  background-color: white;
+  left: 18%;
 }
 .circle__text {
   width: 240px;
@@ -77,7 +97,8 @@ header center {
 }
 .how-it__item_text a:hover {
   text-decoration: none;
-  color: #6c757d;
+  color: #6c7;
+  border-color: #b3d7ff;
 }
 .how-it__item_devices {
   position: relative;
@@ -93,10 +114,18 @@ footer {
   background-color: #1d2124;
   padding-top: 30px;
   color: white;
+  padding-bottom: 20px;
 }
 .footer-head {
   margin: 0;
 }
 .footer-text {
   padding: 10px 20px;
+}
+.footer-link {
+  color: white;
+  margin-bottom: 10px;
+}
+.footer-link:hover {
+  color: #6c757d;
 }
