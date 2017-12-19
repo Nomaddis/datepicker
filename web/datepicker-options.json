@@ -1,0 +1,8 @@
+{
+  "cost":400,
+  "startOfWeek":"monday",
+  "format":"DD.MM.YY",
+  "minNights":1,
+  "showTopbar":false,
+  "autoClose":false
+}

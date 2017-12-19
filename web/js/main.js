@@ -2,6 +2,7 @@
 
 let idCounter = 0;
 
+//datepicker class
 class HotelDatepicker {
     constructor(input, options) {
         this._boundedEventHandlers = {};
@@ -31,13 +32,13 @@ class HotelDatepicker {
         this.showTopbar = opts.showTopbar === undefined ? true : opts.showTopbar;
         this.i18n = opts.i18n || {
             selected: 'Your stay:',
-            night: 'Night',
-            nights: 'Nights',
-            button: 'Close',
-            'day-names-short': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-            'day-names': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-            'month-names-short': ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-            'month-names': ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            night: 'Ніч',
+            nights: 'Ночей',
+            button: 'Закрити',
+            'day-names-short': ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+            'day-names': ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота'],
+            'month-names-short': ['Січ', 'Лют', 'Бер', 'Квіт', 'Трав', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Груд'],
+            'month-names': ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'],
             'error-more': 'Date range should not be more than 1 night',
             'error-more-plural': 'Date range should not be more than %d nights',
             'error-less': 'Date range should not be less than 1 night',
@@ -1474,50 +1475,33 @@ class HotelDatepicker {
     }
 }
 
-//import HotelDatepicker from './hotel-datepicker.js'
+
 let nights = document.getElementById('days');
 let money = document.getElementById('money');
 let input = document.getElementById('datepicker');
-let options = {
-    cost: 400,
-    startOfWeek: 'monday',
-    format: 'DD.MM.YY',
-    minNights: 1,
-    showTopbar: false,
-    autoClose: false,
-    i18n: {
-        selected: 'Your stay:',
-        night: 'Ніч',
-        nights: 'Ночей',
-        button: 'Close',
-        'day-names-short': ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-        'day-names': ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота'],
-        'month-names-short': ['Січ', 'Лют', 'Бер', 'Квіт', 'Трав', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Груд'],
-        'month-names': ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'],
-        'error-more': 'Date range should not be more than 1 night',
-        'error-more-plural': 'Date range should not be more than %d nights',
-        'error-less': 'Date range should not be less than 1 night',
-        'error-less-plural': 'Date range should not be less than %d nights',
-        'info-more': 'Please select a date range longer than 1 night',
-        'info-more-plural': 'Please select a date range longer than %d nights',
-        'info-range': 'Please select a date range between %d and %d nights',
-        'info-default': 'Будь ласка виберіть діапазон'
-    }
-};
 
-let datepicker = new HotelDatepicker(input, options);
-datepicker.open();
 
-//let mounth = document.getElementsByClassName('datepicker__months');
-//datepicker.setValue();
 
-document.getElementById('datepicker-datepicker').addEventListener("click",function () {
+//Server request here
+$.getJSON( "datepicker-options.json", function( data ) {
 
-    setTimeout(() => {
-        //nights.innerHTML = 0;
-        nights.innerHTML = datepicker.getNights();
-        money.innerHTML = datepicker.getNights() * options.cost;
-    }, 10);
+    //init datepicker
+    let options = data;
+    let datepicker = new HotelDatepicker(input, options);
+    datepicker.open();
+    //write days & cost qty
+    document.getElementById('datepicker-datepicker').addEventListener("click",function () {
 
+        setTimeout(() => {
+            //nights.innerHTML = 0;
+            nights.innerHTML = datepicker.getNights();
+            money.innerHTML = datepicker.getNights() * options.cost;
+        }, 10);
+
+    });
 });
+
+
+
+
 
