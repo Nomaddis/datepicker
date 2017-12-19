@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.18.13",
+    "fecha": "^2.3.2",
     "gulp-less": "^3.3.2",
     "gulp-pug": "^3.3.0",
     "less": "^2.7.2",

@@ -1,44 +1,21 @@
 main
     section.main-circles-section
         .container
-            .main-circles
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-                .main-circles__item
-                    .circle
-                    .circle__text
-                        span Platinum use
-                        p Lorem ipsum dolor set amet ipsum dolor set amet ipsum
-    section.how-it__wrap
-        .container
-            .how-it
-                .how-it__item.how-it__item_text
-                    h2 how it works
-                    p Lorem ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet ipsum dolor sit amet
-                    a(href="#") give it
-                .how-it__item.how-it__item_devices
-                    img(src="img/device.png")
+            .col-md-2
+                .left-sidebar
+            .col-md-8
+                .calendar-wrap
+                    .datepicker-title
+                        span Оберіть бажаний час бронювання
+                    .calendar
+                        input(type="text" value="" id="datepicker")
+                    .calendar-info
+                        span.days-qty
+                            span.days-title Кількість заброньованих ночей:
+                            span#days 1
+                        span.money-qty
+                            span.money-title Вартість:
+                            span#money 500
 
+            .col-md-2
+                .right-sidebar

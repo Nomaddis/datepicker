@@ -2,130 +2,34 @@
   margin: auto;
   width: 1170px;
 }
-header {
-  background-color: #000000;
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: #854c4c;
 }
-header center {
-  text-transform: uppercase;
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  padding: 30px 0;
+.left-sidebar,
+.right-sidebar {
+  width: 100%;
+  height: 800px;
+  background-color: #6c757d;
 }
-.main-circles-section {
-  background-color: #1d2124;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.main-circles {
+.calendar-wrap {
+  margin-top: 60px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
-.main-circles__item {
-  width: 370px;
-  margin-bottom: 20px;
-  display: flex;
+#datepicker {
+  display: none;
 }
-.main-circles__item:hover .circle {
-  border-color: #b3d7ff;
+.calendar-info {
+  margin-right: 2px;
 }
-.main-circles__item:hover .circle:before {
-  background-color: #b3d7ff;
-}
-.main-circles__item:hover .circle__text {
-  color: #b3d7ff;
-}
-.main-circles__item .circle {
-  width: 50px;
-  height: 50px;
-  border: 3px solid white;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-}
-.main-circles__item .circle:before {
-  position: absolute;
-  top: 43%;
-  content: "";
-  display: block;
-  width: 30px;
-  height: 7px;
-  background-color: white;
-  left: 18%;
-}
-.circle__text {
-  width: 240px;
-  margin-left: 10px;
-  color: #fff;
-}
-.circle__text span {
-  font-size: 18px;
-  font-weight: 500;
-}
-.circle__text p {
-  font-size: 14px;
-}
-.how-it__wrap {
-  background-color: #6c757d;
-  color: #000;
-}
-.how-it {
-  padding-top: 40px;
-  display: flex;
-}
-.how-it__item {
-  width: 585px;
-}
-.how-it__item_text {
-  color: white;
-  padding-bottom: 40px;
-}
-.how-it__item_text h2 {
-  font-weight: 600;
-  margin: 0;
-  text-transform: uppercase;
-}
-.how-it__item_text p {
-  margin: 30px 0;
-}
-.how-it__item_text a {
-  border: 2px solid white;
-  padding: 7px 35px;
-  color: white;
-  text-transform: uppercase;
-  transition: 0.2s all ease;
-}
-.how-it__item_text a:hover {
-  text-decoration: none;
-  color: #6c7;
-  border-color: #b3d7ff;
-}
-.how-it__item_devices {
-  position: relative;
-  overflow: hidden;
-}
-.how-it__item_devices img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
+.money-qty {
+  margin-left: 50px;
 }
 footer {
+  width: 100%;
+  height: 150px;
   background-color: #1d2124;
-  padding-top: 30px;
-  color: white;
-  padding-bottom: 20px;
-}
-.footer-head {
-  margin: 0;
-}
-.footer-text {
-  padding: 10px 20px;
-}
-.footer-link {
-  color: white;
-  margin-bottom: 10px;
-}
-.footer-link:hover {
-  color: #6c757d;
 }
