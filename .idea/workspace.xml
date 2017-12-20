@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8acc889f-6be8-4008-b7a5-5814a7e78ec0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/datepicker-options.json" afterPath="$PROJECT_DIR$/web/datepicker-options.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/main.js" afterPath="$PROJECT_DIR$/web/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/index.pug" afterPath="$PROJECT_DIR$/pug/index.pug" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,10 +30,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="-56">
               <caret line="1490" column="26" lean-forward="false" selection-start-line="1490" selection-start-column="26" selection-end-line="1490" selection-end-column="26" />
               <folding>
                 <element signature="n#HotelDatepicker#0" expanded="false" />
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.pug" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pug/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -128,10 +127,10 @@
         <option value="$PROJECT_DIR$/web/css/hotel-datepicker.css" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/less/main.less" />
-        <option value="$PROJECT_DIR$/pug/index.pug" />
         <option value="$PROJECT_DIR$/pug/modules/main.pug" />
         <option value="$PROJECT_DIR$/web/datepicker-options.json" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
+        <option value="$PROJECT_DIR$/pug/index.pug" />
       </list>
     </option>
   </component>
@@ -153,10 +152,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="751" />
-    <option name="y" value="195" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -243,7 +242,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="SearchEverywhereHistoryKey" value="indent&#9;ACTION&#9;EditorIndentLineOrSelection" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../my template" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
   </component>
@@ -366,12 +365,12 @@
       <workItem from="1513628035495" duration="12043000" />
       <workItem from="1513680405466" duration="8412000" />
       <workItem from="1513708029348" duration="3913000" />
-      <workItem from="1513774516572" duration="3776000" />
+      <workItem from="1513774516572" duration="3978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107114000" />
+    <option name="totallyTimeSpent" value="107316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,14 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pug/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pug/modules/main.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -786,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
+        <state relative-caret-position="-56">
           <caret line="1490" column="26" lean-forward="false" selection-start-line="1490" selection-start-column="26" selection-end-line="1490" selection-end-column="26" />
           <folding>
             <element signature="n#HotelDatepicker#0" expanded="false" />
@@ -795,6 +786,14 @@
             <marker date="1513778999427" expanded="true" signature="12521:12525" ph="&gt;" />
             <marker date="1513778999427" expanded="true" signature="12732:12744" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pug/index.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="34" lean-forward="false" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
