@@ -1509,7 +1509,7 @@ function initbooking(input, options) {
 
 //start datepicker
 initbooking(input, options);
-
+console.log("initialize");
 
 
 /*

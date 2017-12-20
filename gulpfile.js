@@ -13,6 +13,25 @@ var config = {
     port: 9000,
     logPrefix: "Frontend_Devil"
 };
+
+const babel = require('gulp-babel');
+
+gulp.task('babel', () =>
+    gulp.src('web/js/main.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('web/js/ES5/'))
+);
+
+// gulp.task('babel', () => {
+//    return gulp.src('web/js/main.js')
+//        .pipe(babel({
+//            presets: ['es2015']
+//        }))
+//        .pipe(gulp.dest('build'));
+// });
+
 gulp.task('less', function() {
     return gulp.src('less/all.less') // Gets all files ending with .styl in stylys/styl and children dirs
         .pipe(less())
@@ -34,4 +53,4 @@ gulp.task('watch', ['browser-sync'], function(){
     // Other watchers
 })
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['browser-sync', 'watch', 'babel']);
