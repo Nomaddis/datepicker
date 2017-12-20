@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8acc889f-6be8-4008-b7a5-5814a7e78ec0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/main.less" afterPath="$PROJECT_DIR$/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/index.pug" afterPath="$PROJECT_DIR$/pug/index.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pug/modules/main.pug" afterPath="$PROJECT_DIR$/pug/modules/main.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/all.css" afterPath="$PROJECT_DIR$/web/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.html" afterPath="$PROJECT_DIR$/web/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/main.js" afterPath="$PROJECT_DIR$/web/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,14 +33,14 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="1485" column="56" lean-forward="true" selection-start-line="1485" selection-start-column="56" selection-end-line="1485" selection-end-column="56" />
+            <state relative-caret-position="420">
+              <caret line="1524" column="0" lean-forward="true" selection-start-line="1524" selection-start-column="0" selection-end-line="1524" selection-end-column="0" />
               <folding>
                 <element signature="n#HotelDatepicker#0" expanded="false" />
-                <marker date="1513777040687" expanded="true" signature="10872:10884" ph="..." />
-                <marker date="1513777040687" expanded="true" signature="12361:12365" ph="&lt;" />
-                <marker date="1513777040687" expanded="true" signature="12521:12525" ph="&gt;" />
-                <marker date="1513777040687" expanded="true" signature="12732:12744" ph="..." />
+                <marker date="1513778021594" expanded="true" signature="10872:10884" ph="..." />
+                <marker date="1513778021594" expanded="true" signature="12361:12365" ph="&lt;" />
+                <marker date="1513778021594" expanded="true" signature="12521:12525" ph="&gt;" />
+                <marker date="1513778021594" expanded="true" signature="12732:12744" ph="..." />
               </folding>
             </state>
           </provider>
@@ -85,8 +81,8 @@
       <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pug/index.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="136">
+              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -379,12 +375,12 @@
       <workItem from="1513628035495" duration="12043000" />
       <workItem from="1513680405466" duration="8412000" />
       <workItem from="1513708029348" duration="3913000" />
-      <workItem from="1513774516572" duration="1834000" />
+      <workItem from="1513774516572" duration="2806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105172000" />
+    <option name="totallyTimeSpent" value="106144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,8 +779,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pug/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -799,14 +795,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="1485" column="56" lean-forward="true" selection-start-line="1485" selection-start-column="56" selection-end-line="1485" selection-end-column="56" />
+        <state relative-caret-position="420">
+          <caret line="1524" column="0" lean-forward="true" selection-start-line="1524" selection-start-column="0" selection-end-line="1524" selection-end-column="0" />
           <folding>
             <element signature="n#HotelDatepicker#0" expanded="false" />
-            <marker date="1513777040687" expanded="true" signature="10872:10884" ph="..." />
-            <marker date="1513777040687" expanded="true" signature="12361:12365" ph="&lt;" />
-            <marker date="1513777040687" expanded="true" signature="12521:12525" ph="&gt;" />
-            <marker date="1513777040687" expanded="true" signature="12732:12744" ph="..." />
+            <marker date="1513778021594" expanded="true" signature="10872:10884" ph="..." />
+            <marker date="1513778021594" expanded="true" signature="12361:12365" ph="&lt;" />
+            <marker date="1513778021594" expanded="true" signature="12521:12525" ph="&gt;" />
+            <marker date="1513778021594" expanded="true" signature="12732:12744" ph="..." />
           </folding>
         </state>
       </provider>

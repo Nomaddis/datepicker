@@ -1482,11 +1482,10 @@ let input = document.getElementById('datepicker');
 
 
 
-//Server request here
-$.getJSON( "datepicker-options.json", function( data ) {
 
-    //init datepicker
-    let options = data;
+//init datepicker
+function initbooking(input, options) {
+    //let options = data;
     let datepicker = new HotelDatepicker(input, options);
     datepicker.open();
     //write days & cost qty
@@ -1499,9 +1498,27 @@ $.getJSON( "datepicker-options.json", function( data ) {
         }, 10);
 
     });
-});
 
+}
 
+//Server request here
+var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
+    //init datepicker
+    initbooking(input, data);
+})
+    //set default settings if failed
+    .fail(function() {
+        console.log( "error to load options to server" );
+        let options = {
+            "cost":400,
+            "startOfWeek":"monday",
+            "format":"DD.MM.YY",
+            "minNights":1,
+            "showTopbar":false,
+            "autoClose":false
+        };
 
+        initbooking(input, options);
+    });
 
 
