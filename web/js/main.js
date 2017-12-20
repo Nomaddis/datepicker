@@ -1488,6 +1488,7 @@ let options = {
     "autoClose":false
 };
 
+
 //init datepicker function
 function initbooking(input, options) {
     //let options = data;
@@ -1506,6 +1507,12 @@ function initbooking(input, options) {
 
 }
 
+//start datepicker
+initbooking(input, options);
+
+
+
+/*
 //Server request here
 var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
     //init datepicker
@@ -1516,3 +1523,4 @@ var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
         console.log( "error to load options from server" );
         initbooking(input, options);
     });
+*/
