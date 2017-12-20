@@ -1479,11 +1479,16 @@ class HotelDatepicker {
 let nights = document.getElementById('days');
 let money = document.getElementById('money');
 let input = document.getElementById('datepicker');
+let options = {
+    "cost":400,
+    "startOfWeek":"monday",
+    "format":"DD.MM.YY",
+    "minNights":1,
+    "showTopbar":false,
+    "autoClose":false
+};
 
-
-
-
-//init datepicker
+//init datepicker function
 function initbooking(input, options) {
     //let options = data;
     let datepicker = new HotelDatepicker(input, options);
@@ -1500,14 +1505,6 @@ function initbooking(input, options) {
     });
 
 }
-let options = {
-    "cost":400,
-    "startOfWeek":"monday",
-    "format":"DD.MM.YY",
-    "minNights":1,
-    "showTopbar":false,
-    "autoClose":false
-};
 
 //Server request here
 var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
