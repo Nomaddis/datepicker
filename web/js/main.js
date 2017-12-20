@@ -1500,6 +1500,14 @@ function initbooking(input, options) {
     });
 
 }
+let options = {
+    "cost":400,
+    "startOfWeek":"monday",
+    "format":"DD.MM.YY",
+    "minNights":1,
+    "showTopbar":false,
+    "autoClose":false
+};
 
 //Server request here
 var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
@@ -1508,17 +1516,6 @@ var jqxhr = $.getJSON( "datepicker-options.json", function(data) {
 })
     //set default settings if failed
     .fail(function() {
-        console.log( "error to load options to server" );
-        let options = {
-            "cost":400,
-            "startOfWeek":"monday",
-            "format":"DD.MM.YY",
-            "minNights":1,
-            "showTopbar":false,
-            "autoClose":false
-        };
-
+        console.log( "error to load options from server" );
         initbooking(input, options);
     });
-
-
